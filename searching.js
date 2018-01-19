@@ -42,7 +42,6 @@ function fetchData(url, searchInput, numberofPages, numberofItemsToShowPerPage){
                         var count = 0;
 
                         items.forEach(function(item) {
-                                //map[count++] = item;
                                 count++;
                                 if(count<numberofItemsToShowPerPage){
                                         result += addContent(item);
