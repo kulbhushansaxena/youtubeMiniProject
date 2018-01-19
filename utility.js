@@ -1,5 +1,4 @@
 function fetchNextPageRecords(pagenumber){
-    //pageNumber = pagenumber;
     if(pagenumber){
         
         currentPage = pagenumber;
@@ -27,8 +26,6 @@ function fetchNextPageRecords(pagenumber){
 
 
 function modifyData(count, pagenumber){
-    //let listElement = document.querySelector("#list");
-    //listElement.innerHTML = "";
     var result = "";
 
     for(var i=count;i<(pagenumber*numberofItemsToShowPerPage);i++){
@@ -67,11 +64,10 @@ function addPages(pageNumber, textContent, isActive, parrent){
 }
 
 function addPagination(){
-    //document.querySelector("#pagebar").innerHTML = "";
+   
     var paginationbar = document.querySelector("#pagebar");
     paginationbar.innerHTML = "";
 
-    //addPages(1,1,true, paginationbar);
     for(let i =1 ;i<=numberofPages;i++){
         addPages(i,i,i==currentPage, paginationbar);
     }
@@ -80,8 +76,6 @@ function addPagination(){
 
 function resize(){
      width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-     //if(screen.width>width)
-        //isresized = true;
     
     numberofItemsToShowPerPage = parseInt(width/400);
     numberofPages = parseInt((15/numberofItemsToShowPerPage)+1);
