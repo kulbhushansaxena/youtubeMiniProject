@@ -1,0 +1,19 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+    <head> 
+        <title>My Page</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css"> 
+        <script src="utility.js"> </script>
+    </head>
+    <body style="background-color:black" onresize="resize()">
+        <div class="mainDiv">
+            <div class="block center">
+                 <button id="searchButton"><img src="images/search.png"/></button>
+                 <input id="searchKeyword" type = "text" placeHolder="Search keyword..........."/>
+            </div>
+            <div id="list" class="wrapper"></div>
+            <div class='pagination block centerAlign' id='pagebar' ></div>
+        </div>
+        <script src="searching.js"> </script>
+    </body>
+</html>
