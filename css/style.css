@@ -1,0 +1,100 @@
+.mainDiv{
+    background-color: dimgrey;
+    margin:110px ;
+    padding:50px;
+}
+
+#searchKeyword {
+    font-size: 30px;
+    padding-left: 14px;
+}
+
+#searchButton{
+    float:left;
+    background-color: white;
+    margin-right: -2px;
+}
+
+.block {
+    height:10%;
+    width:438px;
+    text-align:left;
+}
+.center {
+    margin:auto;
+    background-color:dimgrey;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 109%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.column {
+       float: left;
+       width: 19%;
+       margin-left:10px;
+       background: white;
+       margin-right: 70px;
+       height: 540px;
+       border-radius: 7px;
+}
+
+.pagination a {
+    color: white;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    background-color : white;
+    border-radius: 200px;
+    margin: 5px;
+}
+
+/* Style the active/current link */
+.pagination a.active {
+    background-color: red;
+    color: white;
+}
+
+/* Add a grey background color on mouse-over */
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.pagination {
+    overflow: hidden;
+}
+
+.onTop{
+    position : absolute;
+    top :310px;
+    width: 320;
+    background-color: green;
+    color: white;
+    height: 7%;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+.imageClass{
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-left:20px;
+}
+
+.centerAlign{
+    position: absolute;
+    left: 45%;
+}
+
+.image{
+    margin:2px;
+}
+
+.pMargin{
+    margin: 16px;
+}
